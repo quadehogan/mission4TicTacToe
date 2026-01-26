@@ -1,0 +1,11 @@
+# Build results
+bin/
+obj/
+
+# IDE
+.idea/
+*.user
+*.suo
+
+# OS files
+.DS_Store
