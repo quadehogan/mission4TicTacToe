@@ -4,29 +4,11 @@ public class TicTacSupport
 {
     public string PrintBoard(string[] board)
     {
-        string boardString = "";
-
-        for (int i = 0; i < board.Length; i++)
-        {
-            if (i == 0 || i== 1 || i == 3 || i == 4 || i == 6 || i == 7)
-            {
-                boardString += board[i];
-                boardString += " | ";
-            }
-
-            if (i == 2 || i == 5)
-            {
-                boardString += board[i];
-                boardString += "\n";
-                boardString += "----------\n";
-            }
-
-            if (i == 8)
-            {
-                boardString += board[i];
-            }
-        }
-        return boardString;
+        return "1 | 2 | 3\n" +
+               "----------\n" +
+               "4 | 5 | 6\n" +
+               "----------\n" +
+               "7 | 8 | 9";
     }
 
     public string CheckWin(string[] board)
@@ -164,5 +146,6 @@ public class TicTacSupport
 
         return win;
     }
+    
     
 }

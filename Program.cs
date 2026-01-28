@@ -1,4 +1,10 @@
-﻿
-// See https://aka.ms/new-console-template for more information
+namespace mission4TicTacToe;
 
-Console.WriteLine("Hello, World!");
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        TicTacDriver driver = new TicTacDriver();
+        driver.Run();
+    }
+}
