@@ -4,11 +4,17 @@ public class TicTacSupport
 {
     public string PrintBoard(string[] board)
     {
-        return "1 | 2 | 3\n" +
+        string Cell(int index)
+        {
+            string value = board[index];
+            return string.IsNullOrWhiteSpace(value) ? (index + 1).ToString() : value;
+        }
+
+        return $"{Cell(0)} | {Cell(1)} | {Cell(2)}\n" +
                "----------\n" +
-               "4 | 5 | 6\n" +
+               $"{Cell(3)} | {Cell(4)} | {Cell(5)}\n" +
                "----------\n" +
-               "7 | 8 | 9";
+               $"{Cell(6)} | {Cell(7)} | {Cell(8)}";
     }
 
     public string CheckWin(string[] board)
